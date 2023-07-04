@@ -13,4 +13,5 @@ jobs:
           password: ${{ secrets.REMOTE_SSH_PASSWORD }}
           key: ${{ secrets.REMOTE_SSH_KEY }}
           port: ${{ secrets.REMOTE_SSH_PORT }}
+          timeout: 60s
           script: whoami
