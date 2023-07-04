@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div>1234</div>
+      <div>진짜테스트</div>
     </>
   );
 }
