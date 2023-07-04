@@ -10,7 +10,6 @@ jobs:
         with:
           host: ${{ secrets.REMOTE_IP }}
           username: ${{ secrets.REMOTE_SSH_ID }}
-          key: ${{ secrets.REMOTE_SSH_KEY }}
-          port: ${{ secrets.REMOTE_SSH_PORT }}
-          debug: true
-          script: whoami
+          password: ${{ secrets.REMOTE_SSH_PASSWORD }}
+          script: |
+            echo "테스트 출력"
