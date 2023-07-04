@@ -14,3 +14,5 @@ jobs:
           key: ${{ secrets.REMOTE_SSH_KEY }}
           port: ${{ secrets.REMOTE_SSH_PORT }}
           script: whoami
+          env:
+            PORT: 8000
